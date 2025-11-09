@@ -10,22 +10,30 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 rounded-lg bg-gradient-hero flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">ST</span>
-            </div>
-            <span className="font-bold text-xl text-foreground">Sunshine Technologies</span>
+          <Link to="/" className="flex items-center">
+            <span className="font-bold text-xl text-foreground">
+              Sunshine Technologies
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-foreground hover:text-primary transition-colors">
+            <Link
+              to="/"
+              className="text-foreground hover:text-primary transition-colors"
+            >
               Home
             </Link>
-            <Link to="/services" className="text-foreground hover:text-primary transition-colors">
+            <Link
+              to="/services"
+              className="text-foreground hover:text-primary transition-colors"
+            >
               Services
             </Link>
-            <Link to="/about" className="text-foreground hover:text-primary transition-colors">
+            <Link
+              to="/about"
+              className="text-foreground hover:text-primary transition-colors"
+            >
               About
             </Link>
             <Link to="/contact">

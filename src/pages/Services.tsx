@@ -48,7 +48,7 @@ const Services = () => {
       icon: Shield,
       title: "Cybersecurity",
       description:
-        "Comprehensive security solutions to protect your business from evolving cyber threats.",
+        "Security solutions to protect your business from evolving cyber threats.",
       features: [
         "Threat detection and response",
         "Security audits and assessments",
@@ -96,7 +96,7 @@ const Services = () => {
       icon: Smartphone,
       title: "Mobile Device Management",
       description:
-        "Secure and manage mobile devices across your organization with comprehensive MDM solutions.",
+        "Secure and manage mobile devices across your organization with MDM solutions.",
       features: [
         "Device enrollment and provisioning",
         "Security policy enforcement",
@@ -120,7 +120,7 @@ const Services = () => {
       icon: Users,
       title: "User Training",
       description:
-        "Comprehensive training programs to maximize productivity and security awareness.",
+        "Training programs to maximize productivity and security awareness.",
       features: [
         "Software training sessions",
         "Security awareness training",
@@ -135,14 +135,18 @@ const Services = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-hero">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center text-primary-foreground">
+      <section
+        className="pt-32 pb-16 bg-cover bg-center bg-no-repeat relative"
+        style={{ backgroundImage: "url(/src/assets/networking-bg.jpg)" }}
+      >
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-slide-up">
               Our Services
             </h1>
             <p className="text-xl max-w-3xl mx-auto opacity-90 animate-fade-in">
-              Comprehensive managed IT services tailored to your business needs
+              Managed IT services tailored to your business needs
             </p>
           </div>
         </div>
@@ -153,19 +157,33 @@ const Services = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="hover:shadow-lg transition-all duration-300">
+              <Card
+                key={index}
+                className="hover:shadow-lg transition-all duration-300"
+              >
                 <CardHeader>
                   <div className="w-14 h-14 rounded-lg bg-gradient-hero flex items-center justify-center mb-4">
-                    <service.icon className="text-primary-foreground" size={28} />
+                    <service.icon
+                      className="text-primary-foreground"
+                      size={28}
+                    />
                   </div>
                   <CardTitle className="text-2xl">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground mb-4">{service.description}</p>
+                  <p className="text-muted-foreground mb-4">
+                    {service.description}
+                  </p>
                   <ul className="space-y-2">
                     {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start text-sm text-foreground">
-                        <Zap className="text-accent mr-2 mt-0.5 flex-shrink-0" size={16} />
+                      <li
+                        key={idx}
+                        className="flex items-start text-sm text-foreground"
+                      >
+                        <Zap
+                          className="text-accent mr-2 mt-0.5 flex-shrink-0"
+                          size={16}
+                        />
                         {feature}
                       </li>
                     ))}
@@ -185,8 +203,8 @@ const Services = () => {
               Need a Custom Solution?
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Every business is unique. Let's discuss how we can create a tailored IT strategy
-              that fits your specific needs and budget.
+              Every business is unique. Let's discuss how we can create a
+              tailored IT strategy that fits your specific needs and budget.
             </p>
             <Link to="/contact">
               <Button size="lg">Contact Us Today</Button>

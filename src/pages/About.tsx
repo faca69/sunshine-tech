@@ -8,22 +8,26 @@ const About = () => {
     {
       icon: Award,
       title: "Excellence",
-      description: "We strive for excellence in every solution we deliver, ensuring the highest quality of service.",
+      description:
+        "We strive for excellence in every solution we deliver, ensuring the highest quality of service.",
     },
     {
       icon: Users,
       title: "Partnership",
-      description: "We build lasting relationships with our clients, becoming a true extension of their team.",
+      description:
+        "We build lasting relationships with our clients, becoming a true extension of their team.",
     },
     {
       icon: Target,
       title: "Innovation",
-      description: "We stay ahead of technology trends to provide cutting-edge solutions for modern challenges.",
+      description:
+        "We stay ahead of technology trends to provide cutting-edge solutions for modern challenges.",
     },
     {
       icon: TrendingUp,
       title: "Growth",
-      description: "We're committed to helping our clients grow by providing scalable IT infrastructure.",
+      description:
+        "We're committed to helping our clients grow by providing scalable IT infrastructure.",
     },
   ];
 
@@ -39,7 +43,7 @@ const About = () => {
               About Sunshine Technologies
             </h1>
             <p className="text-xl max-w-3xl mx-auto opacity-90 animate-fade-in">
-              Your trusted partner in managed IT services since 2010
+              Your trusted partner in managed IT services since 2025
             </p>
           </div>
         </div>
@@ -54,20 +58,26 @@ const About = () => {
             </h2>
             <div className="space-y-6 text-lg text-muted-foreground">
               <p>
-                Founded in 2010, Sunshine Technologies emerged from a simple vision: to make enterprise-level
-                IT services accessible to businesses of all sizes. What started as a small team of passionate
-                IT professionals has grown into a trusted managed service provider serving hundreds of clients
-                across multiple industries.
+                Founded in 2025, Sunshine Technologies emerged from a simple
+                vision: to make enterprise-level IT services accessible to
+                businesses of all sizes. What started as a small team of
+                passionate IT professionals has grown into a trusted managed
+                service provider serving hundreds of clients across multiple
+                industries.
               </p>
               <p>
-                Over the years, we've witnessed the dramatic evolution of technology and its impact on business
-                operations. Through every change, our commitment has remained constant: providing reliable,
-                secure, and innovative IT solutions that empower businesses to focus on their core objectives.
+                Over the years, we've witnessed the dramatic evolution of
+                technology and its impact on business operations. Through every
+                change, our commitment has remained constant: providing
+                reliable, secure, and innovative IT solutions that empower
+                businesses to focus on their core objectives.
               </p>
               <p>
-                Today, Sunshine Technologies is proud to be a leading MSP, offering comprehensive services from
-                24/7 support to advanced cybersecurity solutions. Our team of certified professionals brings
-                decades of combined experience, ensuring that your technology infrastructure is in expert hands.
+                Today, Sunshine Technologies is proud to be a leading MSP,
+                offering services from 24/7 support to advanced cybersecurity
+                solutions. Our team of certified professionals brings decades of
+                combined experience, ensuring that your technology
+                infrastructure is in expert hands.
               </p>
             </div>
           </div>
@@ -82,12 +92,17 @@ const About = () => {
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value, index) => (
-              <Card key={index} className="text-center hover:shadow-md transition-all duration-300">
+              <Card
+                key={index}
+                className="text-center hover:shadow-md transition-all duration-300"
+              >
                 <CardContent className="p-6">
                   <div className="w-16 h-16 rounded-full bg-gradient-hero flex items-center justify-center mx-auto mb-4">
                     <value.icon className="text-primary-foreground" size={32} />
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-2">{value.title}</h3>
+                  <h3 className="text-xl font-semibold text-foreground mb-2">
+                    {value.title}
+                  </h3>
                   <p className="text-muted-foreground">{value.description}</p>
                 </CardContent>
               </Card>
@@ -136,9 +151,11 @@ const About = () => {
               Our Mission
             </h2>
             <p className="text-xl text-muted-foreground">
-              To empower businesses with reliable, secure, and innovative IT solutions that drive growth,
-              enhance productivity, and provide peace of mind. We're committed to being more than just a
-              service provider – we're your technology partner, dedicated to your success.
+              To empower businesses with reliable, secure, and innovative IT
+              solutions that drive growth, enhance productivity, and provide
+              peace of mind. We're committed to being more than just a service
+              provider – we're your technology partner, dedicated to your
+              success.
             </p>
           </div>
         </div>
