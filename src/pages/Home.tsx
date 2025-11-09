@@ -12,7 +12,6 @@ import {
   ArrowRight,
   CheckCircle2,
 } from "lucide-react";
-import heroImage from "@/assets/hero-tech.jpg";
 import supportImage from "@/assets/service-support.jpg";
 import cloudImage from "@/assets/service-cloud.jpg";
 import securityImage from "@/assets/service-security.jpg";
@@ -62,11 +61,11 @@ const Home = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative pt-20 pb-20 overflow-hidden">
+      <section className="relative pt-32 lg:pt-20 pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-hero opacity-10"></div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-slide-up">
+            <div className="animate-slide-up text-center lg:text-left">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
                 Your Trusted IT Partner for{" "}
                 <span className="bg-gradient-hero bg-clip-text text-transparent">
@@ -77,7 +76,7 @@ const Home = () => {
                 Managed IT services designed to optimize your technology
                 infrastructure, enhance security, and drive business growth.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link to="/contact">
                   <Button size="lg" className="w-full sm:w-auto">
                     Get Started
@@ -103,7 +102,7 @@ const Home = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 bg-secondary">
+      <section className="pt-0 pb-20 lg:pt-20 bg-secondary">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
