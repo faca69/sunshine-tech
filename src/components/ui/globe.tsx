@@ -262,6 +262,10 @@ export function World(props: WorldProps) {
         color={globeConfig.directionalTopLight}
         position={new Vector3(-200, 500, 200)}
       />
+      <directionalLight
+        color={globeConfig.directionalTopLight}
+        position={new Vector3(200, -300, 200)}
+      />
       <pointLight
         color={globeConfig.pointLight}
         position={new Vector3(-200, 500, 200)}

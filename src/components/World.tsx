@@ -6,11 +6,11 @@ import { World } from "@/components/ui/globe";
 export function GlobeDemo() {
   const globeConfig = {
     pointSize: 4,
-    globeColor: "#062056",
+    globeColor: "#092f81",
     showAtmosphere: true,
     atmosphereColor: "#FFFFFF",
     atmosphereAltitude: 0.1,
-    emissive: "#062056",
+    emissive: "#0a328a",
     emissiveIntensity: 0.1,
     shininess: 0.9,
     polygonColor: "rgba(255,255,255,0.7)",
