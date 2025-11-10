@@ -64,8 +64,9 @@ const Home = () => {
       <section className="relative pt-32 lg:pt-20 pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-hero opacity-10"></div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="absolute left-0 top-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-br from-blue-600/20 via-teal-500/20 to-cyan-500/20 rounded-full blur-3xl -z-10"></div>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-slide-up text-center lg:text-left">
+            <div className="animate-slide-up text-center lg:text-left relative z-10">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
                 Your Trusted IT Partner for{" "}
                 <span className="bg-gradient-hero bg-clip-text text-transparent">
